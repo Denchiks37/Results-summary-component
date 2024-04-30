@@ -256,12 +256,28 @@ body {
   }
   .left-side {
     border-radius: 0 0 30px 30px;
-    min-height: 40vh;
+    max-height: 45vh;
     gap: 16px;
+  }
+
+  .text-result {
+    gap: 12px;
   }
 
   .result {
     padding: 16px 32px;
+  }
+
+  .your-result {
+    font-size: 16px;
+  }
+
+  .grade {
+    font-size: 24px;
+  }
+
+  .description {
+    font-size: 16px;
   }
 
   .got-points {
@@ -272,13 +288,19 @@ body {
   .right-side {
     min-height: 50vh;
     justify-content: flex-start;
+    gap: 20px;
   }
 
   .right-side h2 {
     font-size: 18px;
   }
 
+  .category {
+    font-size: 16px;
+  }
+
   .btn {
     margin: 0;
+    padding: 12px 0;
   }
 }
