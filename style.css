@@ -253,6 +253,7 @@ body {
     width: 100vw;
     height: 100vh;
     gap: 24px;
+    border-radius: 0;
   }
   .left-side {
     border-radius: 0 0 30px 30px;
