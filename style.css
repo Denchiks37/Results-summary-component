@@ -78,7 +78,7 @@ FONT SIZE SYSTEM (px)
 
 html,
 body {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 body {
@@ -94,19 +94,19 @@ body {
   display: flex;
   border-radius: 20px;
   max-width: 600px;
-  height: 380px;
+  min-height: 400px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .left-side {
-  max-width: 50%;
+  min-width: 50%;
   background: linear-gradient(var(--light-slate-blue), var(--light-royal-blue));
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  gap: 8px;
-  padding: 32px;
+  gap: 24px;
+  padding: 32px 48px;
   color: var(--pale-blue);
   border-radius: 20px;
 }
@@ -117,7 +117,7 @@ body {
   flex-direction: column;
   align-items: center;
   border-radius: 50%;
-  padding: 32px 52px;
+  padding: 32px 48px;
 }
 
 .got-points {
@@ -152,7 +152,7 @@ body {
   padding: 0 32px;
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 24px;
   justify-content: center;
 }
 
@@ -165,8 +165,9 @@ body {
 .category {
   display: flex;
   justify-content: space-between;
-  padding: 8px 16px;
+  padding: 12px 16px;
   border-radius: 8px;
+  gap: 48px;
 }
 
 .right-side h2 {
@@ -227,9 +228,51 @@ body {
   color: var(--white);
   background-color: var(--dark-gray-blue);
   font-weight: 700;
+  margin-top: 12px;
 }
 
 .btn:hover {
   background: linear-gradient(var(--light-slate-blue), var(--light-royal-blue));
   cursor: pointer;
+}
+
+@media (max-width: 590px) {
+  body {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .card {
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    gap: 24px;
+  }
+  .left-side {
+    border-radius: 0 0 20px 20px;
+    min-height: 40vh;
+    gap: 16px;
+  }
+
+  .result {
+    padding: 16px 32px;
+  }
+
+  .got-points {
+    font-size: 44px;
+    font-weight: 800;
+  }
+
+  .right-side {
+    min-height: 50vh;
+    justify-content: flex-start;
+  }
+
+  .right-side h2 {
+    font-size: 18px;
+  }
+
+  .btn {
+    margin: 0;
+  }
 }
